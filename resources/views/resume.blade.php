@@ -148,7 +148,7 @@
 
                 <div class="section-title">
                     <h2>About</h2>
-                    <p>{{ $personalDetails['headline1'] }}</p>
+                    <p>{{ isset($personalDetails['headline1']) ? $personalDetails['headline1'] : '' }}</p>
                 </div>
 
                 <div class="row">
@@ -227,36 +227,6 @@
                             </div>
                         </div>
                     @endforeach
-
-                    {{-- <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="count-box">
-                            <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="71" data-purecounter-duration="3"
-                                class="purecounter"></span>
-                            <p><strong>Projects</strong> completed</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <div class="count-box">
-                            <i class="bi bi-clock"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="3"
-                                class="purecounter"></span>
-                            <p><strong>Years</strong> of experience</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <div class="count-box">
-                            <i class="bi bi-award"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="3"
-                                class="purecounter"></span>
-                            <p><strong>Honors </strong> and Awards</p>
-                        </div>
-                    </div> --}}
 
                 </div>
 
@@ -393,8 +363,11 @@
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
                                 <p><a href="{{ $personalDetails['locationLink'] }}" target="_blank"
-                                        rel="noopener noreferrer">1 Global Residency, Ugat - Bhesan
-                                        Road, Surat, Gujarat, India - 395009</a>
+                                        rel="noopener noreferrer">{{ $personalDetails['address-apt'] }},
+                                        {{ $personalDetails['address-lm'] }}, {{ $personalDetails['address-city'] }},
+                                        {{ $personalDetails['address-state'] }},
+                                        {{ $personalDetails['address-country'] }} -
+                                        {{ $personalDetails['address-pin'] }}</a>
                                 </p>
                             </div>
 
@@ -421,7 +394,7 @@
                     </div>
 
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                        <form action="/contact" method="post" role="form" class="php-email-form">
+                        <form action="/api/contact" method="post" role="form" class="php-email-form">
                             @csrf
                             @method('POST')
                             <div class="row">

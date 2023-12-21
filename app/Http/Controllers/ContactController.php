@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\DefaultMessage;
+use App\Models\Contact;
+use App\Models\Links;
+use App\Models\PersonalDetails;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
-class IndexController extends BaseController
+class ContactController extends BaseController
 {
     public function contact(Request $request)
     {
@@ -14,5 +18,31 @@ class IndexController extends BaseController
         $email = $request->input("email");
         $subject = $request->input("subject");
         $message = $request->input("message");
+
+        $personalData = PersonalDetails::where("pdStatus", "!=", "0")->pluck("pdValue", "pdTitle")->all();
+        $links = Links::select("linkAddress", "linkName")->pluck("linkAddress", "linkName")->all();
+        $customData = array(
+            "subject" => $subject,
+            "address1" => $personalData["address-apt"],
+            "address2" => $personalData["address-area"] . ", " . $personalData["address-city"],
+            "address3" => $personalData["address-state"] . ", " . $personalData["address-country-short"] . " - " . $personalData["address-pin"] . ".",
+            "phone" => $personalData["phone1"],
+            "githubLink" => $links["Github"],
+            "linkedinLink" => $links["Linkedin"],
+            "twitterLink" => $links["Twitter"],
+            "whatsappLink" => $links["Whatsapp"],
+            "email" => $personalData["email"]
+        );
+
+        Mail::to($email)->send(new DefaultMessage($customData));
+        $insert = array(
+            "name" => $name,
+            "email" => $email,
+            "subject" => $subject,
+            "message" => $message,
+            "mailSent" => "1"
+        );
+        Contact::insert($insert);
+        return "OK";
     }
 }

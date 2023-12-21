@@ -60,7 +60,8 @@ CREATE TABLE tblLinks (
     linkAddress varchar(1024) not null,
     linkIcon varchar(255) not null,
     linkDownload char(1) not null default '0',
-    linkTarget char(1) not null default '1'
+    linkTarget char(1) not null default '1',
+    linkStatus char(1) not null default '1'
 );
 INSERT INTO tblLinks (linkName, linkAddress, linkIcon)
 VALUES (
@@ -143,15 +144,6 @@ CREATE TABLE tblExperience (
     flag char(1) default '0' not null
 );
 CREATE TABLE tblBruteforce (
-    bfId int primary key AUTO_INCREMENT,
-    bfIP varchar(39) not null,
-    bfCount int not null,
-    bfBrowserInfo varchar(512) not null,
-    bfOperatingSystem varchar(128) not null,
-    bfDeviceType varchar(128) not null,
-    bfFailures timestamp not null default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
-);
-CREATE TABLE tblBruteforce (
     bfId INT PRIMARY KEY AUTO_INCREMENT,
     bfIP VARCHAR(39) NOT NULL,
     bfCount INT NOT NULL,
@@ -166,7 +158,7 @@ CREATE TABLE tblBruteforce (
         bfDeviceType
     )
 );
-CREATE TABLE tbllSkills (
+CREATE TABLE tblSkills (
     skillId int primary key AUTO_INCREMENT,
     skillTitle varchar(128) not null,
     skillPercentage varchar(3) not null

@@ -17,7 +17,7 @@ class ResumeController extends BaseController
     {
         $personalDetails = PersonalDetails::where("pdStatus", "!=", "0")->pluck("pdValue", "pdTitle")->all();
         $images = Images::where("imgStatus", "!=", "0")->pluck("imgFile", "imgTitle")->all();
-        $links = Links::all();
+        $links = Links::where("linkStatus", "!=", "0")->orderBy("linkDownload", "asc")->get();
         $facts = Facts::all();
         $skills = Skills::all();
         $education = Education::orderBy("eduEndDate", "desc")->get();

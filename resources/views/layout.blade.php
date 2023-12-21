@@ -34,6 +34,8 @@
         <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
         <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
         <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+        <!-- iCheck -->
+        <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     </head>
 
     <body class="hold-transition sidebar-mini layout-fixed layout-footer-fixed layout-navbar-fixed">
@@ -133,17 +135,17 @@
                with font-awesome or any other icon font library -->
                             <li class="nav-item">
                                 <a href="/" class="nav-link @yield('activeDb')">
-                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <i class="nav-icon fas fa-envelope"></i>
                                     <p>
                                         Dashboard
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="/data" class="nav-link @yield('activeTbl')">
-                                    <i class="nav-icon fas fa-credit-card"></i>
+                                <a href="/update" class="nav-link @yield('activeUpd')">
+                                    <i class="nav-icon fas fa-pen"></i>
                                     <p>
-                                        Add Transection
+                                        Update Details
                                         <span class="right badge badge-danger">New</span>
                                     </p>
                                 </a>
@@ -231,6 +233,12 @@
         <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
         <!-- Summernote -->
         <script src="plugins/summernote/summernote-bs4.min.js"></script>
+        <script>
+            $(function() {
+                //Add text editor
+                $('#compose-textarea').summernote()
+            })
+        </script>
         <!-- overlayScrollbars -->
         <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
         <!-- AdminLTE App -->
@@ -259,24 +267,8 @@
                 IdleTimeout.init(); // initialize session timeout settings
             });
         </script>
+        @yield('tblScript');
         <script>
-            $(function() {
-                $("#example1").DataTable({
-                    "responsive": true,
-                    "lengthChange": false,
-                    "autoWidth": false,
-                    "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-                }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-                $('#example2').DataTable({
-                    "paging": true,
-                    "lengthChange": false,
-                    "searching": false,
-                    "ordering": true,
-                    "info": true,
-                    "autoWidth": false,
-                    "responsive": true,
-                });
-            });
             $("input[data-bootstrap-switch]").each(function() {
                 $(this).bootstrapSwitch('state', $(this).prop('checked'));
             })
