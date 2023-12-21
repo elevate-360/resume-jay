@@ -438,10 +438,10 @@
     <footer id="footer">
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span id="year"></span></strong>
+                &copy; Copyright <strong><span>{{ date('Y') }}</span></strong>
             </div>
             <div class="credits">
-                Developed by <a href="/">Jay Chauhan</a>
+                Developed by <a href="/index">Jay Chauhan</a>
             </div>
         </div>
     </footer><!-- End  Footer -->
