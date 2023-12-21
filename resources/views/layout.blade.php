@@ -134,7 +134,7 @@
                             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                             <li class="nav-item">
-                                <a href="/" class="nav-link @yield('activeDb')">
+                                <a href="/index" class="nav-link @yield('activeDb')">
                                     <i class="nav-icon fas fa-envelope"></i>
                                     <p>
                                         Dashboard
