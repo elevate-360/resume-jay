@@ -273,7 +273,7 @@
         <script src="dist/js/idle-timer.js"></script>
         <script>
             jQuery(document).ready(function() {
-                //IdleTimeout.init(); // initialize session timeout settings
+                IdleTimeout.init(); // initialize session timeout settings
             });
         </script>
         @yield('tblScript');
