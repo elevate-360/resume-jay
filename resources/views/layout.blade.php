@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Elevate360 | Money Dashboard</title>
+        <title>Jay | Contact Dashboard</title>
 
         <!-- Favicons -->
         <link href="dist/img/favicon.png" rel="icon">
@@ -99,7 +99,8 @@
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
                 <a href="/" class="brand-link">
-                    <img src="dist/img/logo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
+                    <img src="dist/img/logo.png" alt="AdminLTE Logo" class="brand-image"
+                        style="opacity: .8; scale: 1.4">
                 </a>
 
                 <!-- Sidebar -->
@@ -138,6 +139,14 @@
                                     <i class="nav-icon fas fa-envelope"></i>
                                     <p>
                                         Dashboard
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/details" class="nav-link @yield('activeDetails')">
+                                    <i class="nav-icon fas fa-file"></i>
+                                    <p>
+                                        Resume Details
                                     </p>
                                 </a>
                             </li>
@@ -264,7 +273,7 @@
         <script src="dist/js/idle-timer.js"></script>
         <script>
             jQuery(document).ready(function() {
-                IdleTimeout.init(); // initialize session timeout settings
+                //IdleTimeout.init(); // initialize session timeout settings
             });
         </script>
         @yield('tblScript');

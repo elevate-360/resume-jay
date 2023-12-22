@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
+use App\Models\Bruteforce;
 use App\Models\Education;
 use App\Models\Experience;
 use App\Models\Facts;
@@ -12,21 +12,21 @@ use App\Models\PersonalDetails;
 use App\Models\Skills;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Support\Facades\DB;
 
-class UpdateController extends BaseController
+class DetailsController extends BaseController
 {
     public function index()
     {
         if (session()->has("user")) {
             $personalDetails = PersonalDetails::all();
-            $images = Images::where("imgStatus", "!=", "0")->pluck("imgFile", "imgTitle")->all();
-            $links = Links::orderBy("linkDownload", "asc")->get();
+            $images = Images::all();
+            $links = Links::all();
             $facts = Facts::all();
             $skills = Skills::all();
-            $education = Education::orderBy("eduEndDate", "desc")->get();
-            $experience = Experience::orderBy("expEndDate", "desc")->get();
-            return view('update', compact('personalDetails', 'images', 'links', 'facts', 'skills', 'education', 'experience'));
+            $education = Education::all();
+            $experience = Experience::all();
+            $bruteforce = Bruteforce::all();
+            return view('details', compact('personalDetails', 'images', 'links', 'facts', 'skills', 'education', 'experience', 'bruteforce'));
         } else {
             return redirect()->route('login');
         }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DetailsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ResumeController;
@@ -23,6 +24,7 @@ Route::post('/login/submit', [LoginController::class, 'login']);
 Route::get('/index', [IndexController::class, 'index'])->name('index');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/update', [UpdateController::class, 'index']);
+Route::get('/details', [DetailsController::class, 'index']);
 Route::get('/forgot-password', function () {
     return view('forget');
 });
