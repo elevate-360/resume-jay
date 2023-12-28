@@ -91,6 +91,15 @@
                 margin-bottom: 30px;
             }
         }
+
+        @media (max-width: 425px) {
+            #hero {
+            background: url("{{ $images['bgImagePhone'] }}") top center;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+        }
     </style>
 </head>
 
