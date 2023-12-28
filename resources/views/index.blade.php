@@ -52,11 +52,8 @@
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($item['replySent'] == '1')
-                                            <i class="icon fas fa-check" style="color: #28a745"></i>
-                                        @else
-                                            <i class="icon fas fa-comments" style="color: #17a2b8"></i>
-                                        @endif
+                                        <a href="/reply?email={{ $item['email'] }}"><i class="icon fas fa-comments"
+                                                style="color: #17a2b8"></i></a>
                                     </td>
                                     <td>
                                         <span

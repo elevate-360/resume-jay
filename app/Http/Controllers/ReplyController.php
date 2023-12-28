@@ -10,22 +10,12 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Mail;
 
-class IndexController extends BaseController
+class ReplyController extends BaseController
 {
-    public function index()
+    public function view()
     {
-        if (session()->has("user")) {
-            $data = Contact::orderBy("cTime", "desc")->get();
-            $count = 0;
-            return view('index', compact('data', 'count'));
-        } else {
-            return redirect()->route('login');
-        }
-    }
-
-    public function data()
-    {
-        return view('data');
+        $email = $_GET["email"];
+        return view('reply', compact('email'));
     }
 
     public function reply(Request $request)

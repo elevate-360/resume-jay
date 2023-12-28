@@ -3,6 +3,7 @@
 use App\Http\Controllers\DetailsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\UpdateController;
 use Illuminate\Support\Facades\Route;
@@ -23,6 +24,7 @@ Route::get('/login', [LoginController::class, 'view'])->name('login');
 Route::post('/login/submit', [LoginController::class, 'login']);
 Route::get('/index', [IndexController::class, 'index'])->name('index');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/reply', [ReplyController::class, 'view']);
 Route::get('/update', [UpdateController::class, 'index']);
 Route::get('/details', [DetailsController::class, 'index']);
 Route::get('/forgot-password', function () {
