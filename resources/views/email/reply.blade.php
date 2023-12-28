@@ -901,7 +901,7 @@
                                                                                         <div
                                                                                             style="text-align: justify; text-align-last: justify;">
                                                                                             <span
-                                                                                                style="font-weight: 400;font-style: normal;color: rgb(122, 124, 128);">{{!! $data['message'] !!}}</span>
+                                                                                                style="font-weight: 400;font-style: normal;color: rgb(122, 124, 128);">{!! $data['message'] !!}</span>
                                                                                         </div>
                                                                                         <br>
                                                                                         <div
