@@ -898,8 +898,7 @@
                                                                                     <td valign="top"
                                                                                         class="pc-font-alt"
                                                                                         style="mso-line-height: exactly;line-height: 156%;letter-spacing: -0.2px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
-                                                                                        <div
-                                                                                            style="text-align: justify; text-align-last: justify;">
+                                                                                        <div>
                                                                                             <span
                                                                                                 style="font-weight: 400;font-style: normal;color: rgb(122, 124, 128);">{!! $data['message'] !!}</span>
                                                                                         </div>
