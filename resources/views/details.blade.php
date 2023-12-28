@@ -52,7 +52,7 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered" id="example2">
                                 <thead>
                                     <tr>
                                         <th>Id</th>
