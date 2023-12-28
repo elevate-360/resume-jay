@@ -41,5 +41,7 @@ class ReplyController extends BaseController
             "email" => $personalData["email"]
         );
         Mail::to($email)->send(new ReplyMessage($customData));
+
+        return redirect()->route('index')->header('Cache-Control', 'no-cache, no-store, must-revalidate');
     }
 }
