@@ -38,10 +38,10 @@
                                     <td>{{ $item['subject'] }}</td>
                                     <td>{{ $item['message'] }}</td>
                                     <td>
-                                        @if ($item['reply'] == '' || $item['reply'] == null)
+                                        @if ($item['replySent'] == '' || $item['replySent'] == null)
                                             <i class="icon fas fa-exclamation-triangle" style="color: #dc3545"></i>
                                         @else
-                                            {{ $item['reply'] }}
+                                            <i class="icon fas fa-check" style="color: #28a745"></i>
                                         @endif
                                     </td>
                                     <td>
