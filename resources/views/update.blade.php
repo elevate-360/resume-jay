@@ -25,7 +25,7 @@
                         @endphp
                         <div class="row">
                             <div class="col-6">
-                                <table class="table table-bordered">
+                                <table class="table table-bordered" id="example2">
                                     <tr>
                                         <th>Name</th>
                                         <th>Value</th>
@@ -52,7 +52,7 @@
                                 </table>
                             </div>
                             <div class="col-6">
-                                <table class="table table-bordered">
+                                <table class="table table-bordered" id="example2">
                                     <tr>
                                         <th>Name</th>
                                         <th>Value</th>
