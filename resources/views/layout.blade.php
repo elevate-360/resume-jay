@@ -99,9 +99,10 @@
             <!-- Main Sidebar Container -->
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
-                <a href="/" class="brand-link">
-                    <img src="dist/img/logo.png" alt="AdminLTE Logo" class="brand-image"
-                        style="opacity: .8; scale: 1.4">
+                <a href="/index" class="brand-link">
+                    <img src="dist/img/DJ-Logo.png" alt="DJ Jay" class="brand-image img-circle elevation-3"
+                        style="opacity: .8">
+                    <span class="brand-text font-weight-light">DJ Jay</span>
                 </a>
 
                 <!-- Sidebar -->
