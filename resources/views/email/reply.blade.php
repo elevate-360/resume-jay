@@ -18,7 +18,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Fira+Sans:ital,wght@0,100;1,100;0,200;1,200;0,300;1,300;0,400;1,400;0,500;1,500;0,600;1,600;0,700;1,700;0,800;1,800;0,900;1,900"
         rel="stylesheet" />
-    <title>Reply Email</title>
+    <title>Untitled</title>
     <!-- Made with Postcards by Designmodo https://designmodo.com/postcards -->
     <!--[if !mso]><!-->
     <style>
@@ -131,6 +131,46 @@
                 src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnLK3eRhf6Xl7Glw.woff2) format('woff2');
                 unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
             }
+
+            /* cyrillic-ext */
+            @font-face {
+                font-family: 'Fira Sans';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnMK7eSxf6Xl7Gl3LX.woff2) format('woff2');
+                unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+            }
+
+            /* cyrillic */
+            @font-face {
+                font-family: 'Fira Sans';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnMK7eQhf6Xl7Gl3LX.woff2) format('woff2');
+                unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+            }
+
+            /* latin-ext */
+            @font-face {
+                font-family: 'Fira Sans';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnMK7eSBf6Xl7Gl3LX.woff2) format('woff2');
+                unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+
+            /* latin */
+            @font-face {
+                font-family: 'Fira Sans';
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnMK7eRhf6Xl7Glw.woff2) format('woff2');
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
         }
     </style>
     <!--<![endif]-->
@@ -235,7 +275,7 @@
             }
 
             .pc-sm-hide {
-                display: none !important;
+                /* display: none !important; */
             }
 
             .pc-sm-bg-img-hide {
@@ -247,13 +287,58 @@
                 padding-bottom: 10px !important;
             }
 
+            .pc-w620-valign-middle {
+                vertical-align: middle !important;
+            }
+
+            td.pc-w620-halign-center {
+                text-align: center !important;
+            }
+
+            table.pc-w620-halign-center {
+                float: none !important;
+                margin-right: auto !important;
+                margin-left: auto !important;
+            }
+
+            img.pc-w620-halign-center {
+                margin-right: auto !important;
+                margin-left: auto !important;
+            }
+
+            table.pc-w620-spacing-0-0-0-0 {
+                margin: 0px 0px 0px 0px !important;
+            }
+
+            td.pc-w620-spacing-0-0-0-0,
+            th.pc-w620-spacing-0-0-0-0 {
+                margin: 0 !important;
+                padding: 0px 0px 0px 0px !important;
+            }
+
+            .pc-w620-padding-0-0-0-0 {
+                padding: 0px 0px 0px 0px !important;
+            }
+
             .pc-w620-padding-0-10 {
                 padding-left: 5px !important;
                 padding-right: 5px !important;
             }
 
+            .pc-w620-padding-0-0-0-150 {
+                padding: 0px 0px 0px 150px !important;
+            }
+
             .pc-w620-padding-30-30-30-30 {
                 padding: 30px 30px 30px 30px !important;
+            }
+
+            .pc-w620-fontSize-30 {
+                font-size: 30px !important;
+            }
+
+            .pc-w620-lineHeight-40 {
+                line-height: 40px !important;
             }
 
             .pc-w620-padding-35-35-35-35 {
@@ -526,22 +611,7 @@
             }
         }
     </style>
-    <!--<![endif]-->
-    <!--[if mso]>
-    <style type="text/css">
-        .pc-font-alt {
-            font-family: Arial, Helvetica, sans-serif !important;
-        }
-    </style>
-    <![endif]-->
-    <!--[if gte mso 9]>
-    <xml>
-        <o:OfficeDocumentSettings>
-            <o:AllowPNG/>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-    </xml>
-    <![endif]-->
+
 </head>
 
 <body class="pc-font-alt"
@@ -551,10 +621,10 @@
         bgcolor="#f4f4f4" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
         <tr>
             <td align="center" valign="top">
-                <table class="pc-project-container" style="width: 600px; max-width: 600px;" width="600"
-                    align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                <table class="pc-project-container" style="width: 600px; max-width: 600px;" width="600" align="center"
+                    border="0" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
-                        <td style="padding: 20px 0px 20px 0px;" align="left" valign="top">
+                        <td align="left" valign="top">
                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
                                 style="width: 100%;">
                                 <tr>
@@ -574,12 +644,12 @@
                                                                 <table width="100%" border="0" cellpadding="0"
                                                                     cellspacing="0" role="presentation">
                                                                     <tr>
-                                                                        <td align="left">
+                                                                        <td class="pc-w620-valign-middle pc-w620-halign-center"
+                                                                            align="left">
                                                                             <table
-                                                                                class="pc-width-hug pc-w620-gridCollapsed-1"
-                                                                                align="left" border="0"
-                                                                                cellpadding="0" cellspacing="0"
-                                                                                role="presentation">
+                                                                                class="pc-width-hug pc-w620-gridCollapsed-0 pc-w620-halign-center"
+                                                                                align="left" border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation">
                                                                                 <tr
                                                                                     class="pc-grid-tr-first pc-grid-tr-last">
                                                                                     <td class="pc-grid-td-first pc-w620-padding-20-0"
@@ -592,8 +662,7 @@
                                                                                             <tr>
                                                                                                 <td align="left"
                                                                                                     valign="top">
-                                                                                                    <table
-                                                                                                        align="left"
+                                                                                                    <table align="left"
                                                                                                         border="0"
                                                                                                         cellpadding="0"
                                                                                                         cellspacing="0"
@@ -610,10 +679,11 @@
                                                                                                                     <tr>
                                                                                                                         <td align="left"
                                                                                                                             valign="top">
-                                                                                                                            <img src="https://cloudfilesdm.com/postcards/image-1702275853141.png"
+                                                                                                                            <img src="https://cloudfilesdm.com/postcards/image-1704278595429.png"
                                                                                                                                 class=""
-                                                                                                                                alt=""
-                                                                                                                                style="display: block;border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:125px;height: auto;max-width: 100%;" />
+                                                                                                                                width="60"
+                                                                                                                                height="60"
+                                                                                                                                alt="" />
                                                                                                                         </td>
                                                                                                                     </tr>
                                                                                                                 </table>
@@ -632,10 +702,11 @@
                                                                                             cellspacing="0"
                                                                                             role="presentation">
                                                                                             <tr>
-                                                                                                <td align="left"
-                                                                                                    valign="top">
-                                                                                                    <table
-                                                                                                        align="left"
+                                                                                                <td class="pc-w620-padding-0-0-0-0"
+                                                                                                    align="left"
+                                                                                                    valign="top"
+                                                                                                    style="padding: 0px 0px 0px 600px;">
+                                                                                                    <table align="left"
                                                                                                         border="0"
                                                                                                         cellpadding="0"
                                                                                                         cellspacing="0"
@@ -650,8 +721,8 @@
                                                                                                                     cellspacing="0"
                                                                                                                     role="presentation">
                                                                                                                     <tr>
-                                                                                                                        <td align="left"
-                                                                                                                            style="padding: 0px 0px 0px 300px;">
+                                                                                                                        <td
+                                                                                                                            align="left">
                                                                                                                             <table
                                                                                                                                 class="pc-width-hug pc-w620-gridCollapsed-0"
                                                                                                                                 align="left"
@@ -670,7 +741,8 @@
                                                                                                                                             cellspacing="0"
                                                                                                                                             role="presentation">
                                                                                                                                             <tr>
-                                                                                                                                                <td align="left"
+                                                                                                                                                <td class="pc-w620-padding-0-0-0-150"
+                                                                                                                                                    align="left"
                                                                                                                                                     valign="top">
                                                                                                                                                     <table
                                                                                                                                                         align="left"
@@ -700,14 +772,13 @@
                                                                                                                                                                                     <td valign="top"
                                                                                                                                                                                         align="left">
                                                                                                                                                                                         <a class="pc-font-alt"
-                                                                                                                                                                                            href="{{ $data['githubLink'] }}"
+                                                                                                                                                                                            href="{{ $data['linkedinLink'] }}"
                                                                                                                                                                                             target="_blank"
                                                                                                                                                                                             style="text-decoration: none;text-align: left;text-align-last: left;">
-                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/bf6f41e08a13e1e4b6763181028664aa.png"
+                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/3096c0f213c325dd5a24aa2807750e94.png"
                                                                                                                                                                                                 class=""
                                                                                                                                                                                                 width="15"
                                                                                                                                                                                                 height="15"
-                                                                                                                                                                                                style="display: block;border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:15px;height: auto;max-width: 100%;"
                                                                                                                                                                                                 alt="" />
                                                                                                                                                                                         </a>
                                                                                                                                                                                     </td>
@@ -762,14 +833,13 @@
                                                                                                                                                                                     <td valign="top"
                                                                                                                                                                                         align="left">
                                                                                                                                                                                         <a class="pc-font-alt"
-                                                                                                                                                                                            href="{{ $data['linkedinLink'] }}"
+                                                                                                                                                                                            href="{{ $data['twitterLink'] }}"
                                                                                                                                                                                             target="_blank"
                                                                                                                                                                                             style="text-decoration: none;text-align: left;text-align-last: left;">
-                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/55f75d985300bdba08681e85531e8cfb.png"
+                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/dae1140630534fd14ae2baebf396ee4b.png"
                                                                                                                                                                                                 class=""
                                                                                                                                                                                                 width="15"
                                                                                                                                                                                                 height="12"
-                                                                                                                                                                                                style="display: block;border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:15px;height: auto;max-width: 100%;"
                                                                                                                                                                                                 alt="" />
                                                                                                                                                                                         </a>
                                                                                                                                                                                     </td>
@@ -824,14 +894,13 @@
                                                                                                                                                                                     <td valign="top"
                                                                                                                                                                                         align="left">
                                                                                                                                                                                         <a class="pc-font-alt"
-                                                                                                                                                                                            href="{{ $data['twitterLink'] }}"
+                                                                                                                                                                                            href="{{ $data['whatsappLink'] }}"
                                                                                                                                                                                             target="_blank"
                                                                                                                                                                                             style="text-decoration: none;text-align: left;text-align-last: left;">
-                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/dae1140630534fd14ae2baebf396ee4b.png"
+                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/d98bd6764bd10259a07624f53c86b53c.png"
                                                                                                                                                                                                 class=""
                                                                                                                                                                                                 width="15"
                                                                                                                                                                                                 height="14"
-                                                                                                                                                                                                style="display: block;border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:15px;height: auto;max-width: 100%;"
                                                                                                                                                                                                 alt="" />
                                                                                                                                                                                         </a>
                                                                                                                                                                                     </td>
@@ -880,8 +949,8 @@
                                             role="presentation">
                                             <tr>
                                                 <td style="padding: 0px 0px 0px 0px;">
-                                                    <table width="100%" border="0" cellspacing="0"
-                                                        cellpadding="0" role="presentation">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                        role="presentation">
                                                         <tr>
                                                             <td valign="top"
                                                                 class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35"
@@ -891,24 +960,48 @@
                                                                     cellspacing="0" role="presentation">
                                                                     <tr>
                                                                         <td valign="top"
-                                                                            style="padding: 0px 0px 20px 0px;">
+                                                                            style="padding: 0px 0px 13px 0px;">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation">
+                                                                                <tr>
+                                                                                    <td valign="top" class="pc-font-alt"
+                                                                                        style="mso-line-height: exactly;line-height: 121%;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: 500;color: #40be65;">
+                                                                                        {{ date("d M, Y") }}</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table width="100%" border="0" cellpadding="0"
+                                                                    cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td valign="top"
+                                                                            style="padding: 0px 0px 15px 0px;">
                                                                             <table border="0" cellpadding="0"
                                                                                 cellspacing="0" role="presentation">
                                                                                 <tr>
                                                                                     <td valign="top"
-                                                                                        class="pc-font-alt"
+                                                                                        class="pc-font-alt pc-w620-fontSize-30 pc-w620-lineHeight-40"
+                                                                                        style="mso-line-height: exactly;line-height: 128%;letter-spacing: -0.6px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 36px;font-weight: 800;color: #151515;">
+                                                                                        Hello, {{ $data["name"] }}!</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table width="100%" border="0" cellpadding="0"
+                                                                    cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td valign="top"
+                                                                            style="padding: 0px 0px 20px 0px;">
+                                                                            <table border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation">
+                                                                                <tr>
+                                                                                    <td valign="top" class="pc-font-alt"
                                                                                         style="mso-line-height: exactly;line-height: 156%;letter-spacing: -0.2px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: normal;color: #9b9b9b;">
-                                                                                        <div>
-                                                                                            <span
-                                                                                                style="font-weight: 400;font-style: normal;color: rgb(122, 124, 128);">{!! $data['message'] !!}</span>
-                                                                                        </div>
-                                                                                        <br>
                                                                                         <div
-                                                                                            style="text-align: left; ">
-                                                                                            <span
-                                                                                                style="font-weight: 400;font-style: normal;color: rgb(122, 124, 128);">Looking
-                                                                                                forward to our continued
-                                                                                                communication.</span>
+                                                                                            style="text-align: justify;">
+                                                                                            <span style="font-weight: 400;font-style: normal;color: rgb(122, 124, 128);">{!! $data['message'] !!}</span>
                                                                                         </div>
                                                                                     </td>
                                                                                 </tr>
@@ -922,9 +1015,8 @@
                                                                         <td align="left">
                                                                             <table
                                                                                 class="pc-width-hug pc-w620-gridCollapsed-0"
-                                                                                align="left" border="0"
-                                                                                cellpadding="0" cellspacing="0"
-                                                                                role="presentation">
+                                                                                align="left" border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation">
                                                                                 <tr
                                                                                     class="pc-grid-tr-first pc-grid-tr-last">
                                                                                     <td class="pc-grid-td-first"
@@ -937,8 +1029,7 @@
                                                                                             <tr>
                                                                                                 <td align="left"
                                                                                                     valign="middle">
-                                                                                                    <table
-                                                                                                        align="left"
+                                                                                                    <table align="left"
                                                                                                         border="0"
                                                                                                         cellpadding="0"
                                                                                                         cellspacing="0"
@@ -960,7 +1051,7 @@
                                                                                                                                 width="40"
                                                                                                                                 height="40"
                                                                                                                                 alt=""
-                                                                                                                                style="display: block;border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:40px;height: auto;max-width: 100%;" />
+                                                                                                                                style="display: block;border: 0;outline: 0;line-height: 100%;-ms-interpolation-mode: bicubic;width:40px;height: auto;max-width: 100%;border-radius: 500px 500px 500px 500px;" />
                                                                                                                         </td>
                                                                                                                     </tr>
                                                                                                                 </table>
@@ -981,8 +1072,7 @@
                                                                                             <tr>
                                                                                                 <td align="left"
                                                                                                     valign="middle">
-                                                                                                    <table
-                                                                                                        align="left"
+                                                                                                    <table align="left"
                                                                                                         border="0"
                                                                                                         cellpadding="0"
                                                                                                         cellspacing="0"
@@ -1001,8 +1091,12 @@
                                                                                                                             class="pc-font-alt"
                                                                                                                             style="mso-line-height: exactly;line-height: 150%;letter-spacing: -0.1px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 16px;font-weight: bold;color: #1b1b1b;">
                                                                                                                             <div>
-                                                                                                                                <span>Jay
-                                                                                                                                    Chauhan</span>
+                                                                                                                                <span>&#xFEFF;</span><a
+                                                                                                                                    href="https://djjay.online"
+                                                                                                                                    target="_blank"
+                                                                                                                                    style="text-decoration: none; color: #1b1b1b; line-height: 1;"><span
+                                                                                                                                        style="text-decoration: none;">Jay
+                                                                                                                                        Chauhan</span></a><span>&#xFEFF;</span>
                                                                                                                             </div>
                                                                                                                         </td>
                                                                                                                     </tr>
@@ -1023,10 +1117,9 @@
                                                                                                                             class="pc-font-alt"
                                                                                                                             style="mso-line-height: exactly;line-height: 143%;letter-spacing: -0.2px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: normal;color: #9b9b9b;">
                                                                                                                             <div>
-                                                                                                                                <span>Back
-                                                                                                                                    Developer
-                                                                                                                                    /
-                                                                                                                                    Musician</span>
+                                                                                                                                <span>Backend
+                                                                                                                                    Developer -
+                                                                                                                                    DJ.</span>
                                                                                                                             </div>
                                                                                                                         </td>
                                                                                                                     </tr>
@@ -1059,8 +1152,8 @@
                                             role="presentation">
                                             <tr>
                                                 <td style="padding: 0px 0px 0px 0px;">
-                                                    <table width="100%" border="0" cellspacing="0"
-                                                        cellpadding="0" role="presentation">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                        role="presentation">
                                                         <tr>
                                                             <td valign="top"
                                                                 class="pc-w520-padding-30-30-30-30 pc-w620-padding-35-35-35-35"
@@ -1072,16 +1165,14 @@
                                                                         <td>
                                                                             <table
                                                                                 class="pc-width-fill pc-w620-gridCollapsed-1"
-                                                                                width="100%" border="0"
-                                                                                cellpadding="0" cellspacing="0"
-                                                                                role="presentation">
+                                                                                width="100%" border="0" cellpadding="0"
+                                                                                cellspacing="0" role="presentation">
                                                                                 <tr
                                                                                     class="pc-grid-tr-first pc-grid-tr-last">
                                                                                     <td class="pc-grid-td-first pc-w620-padding-40-0"
                                                                                         align="left" valign="top"
                                                                                         style="width: 50%; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 0px;">
-                                                                                        <table width="100%"
-                                                                                            border="0"
+                                                                                        <table width="100%" border="0"
                                                                                             cellpadding="0"
                                                                                             cellspacing="0"
                                                                                             role="presentation"
@@ -1089,8 +1180,7 @@
                                                                                             <tr>
                                                                                                 <td align="left"
                                                                                                     valign="top">
-                                                                                                    <table
-                                                                                                        align="left"
+                                                                                                    <table align="left"
                                                                                                         width="100%"
                                                                                                         border="0"
                                                                                                         cellpadding="0"
@@ -1240,7 +1330,7 @@
                                                                                                                                                                                             href="{{ $data['linkedinLink'] }}"
                                                                                                                                                                                             target="_blank"
                                                                                                                                                                                             style="text-decoration: none;text-align: left;text-align-last: left;">
-                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/86ff0644c36edd78114523cbca4168fb.png"
+                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/7d8395b72180988b2b62e4c2202ef8b7.png"
                                                                                                                                                                                                 class=""
                                                                                                                                                                                                 width="20"
                                                                                                                                                                                                 height="20"
@@ -1299,10 +1389,10 @@
                                                                                                                                                                                     <td valign="top"
                                                                                                                                                                                         align="left">
                                                                                                                                                                                         <a class="pc-font-alt"
-                                                                                                                                                                                            href="{{ $data['githubLink'] }}"
+                                                                                                                                                                                            href="{{ $data['twitterLink'] }}"
                                                                                                                                                                                             target="_blank"
                                                                                                                                                                                             style="text-decoration: none;text-align: left;text-align-last: left;">
-                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/1d877394246dbcc0a90e5c6b016d3905.png"
+                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/10451afef0b15b3557459ca08369e514.png"
                                                                                                                                                                                                 class=""
                                                                                                                                                                                                 width="22"
                                                                                                                                                                                                 height="20"
@@ -1361,10 +1451,10 @@
                                                                                                                                                                                     <td valign="top"
                                                                                                                                                                                         align="left">
                                                                                                                                                                                         <a class="pc-font-alt"
-                                                                                                                                                                                            href="{{ $data['twitterLink'] }}"
+                                                                                                                                                                                            href="{{ $data['instagramLink'] }}"
                                                                                                                                                                                             target="_blank"
                                                                                                                                                                                             style="text-decoration: none;text-align: left;text-align-last: left;">
-                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/10451afef0b15b3557459ca08369e514.png"
+                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/d89d65d93ee39fec8f716aefc9b687fa.png"
                                                                                                                                                                                                 class=""
                                                                                                                                                                                                 width="20"
                                                                                                                                                                                                 height="20"
@@ -1426,7 +1516,7 @@
                                                                                                                                                                                             href="{{ $data['whatsappLink'] }}"
                                                                                                                                                                                             target="_blank"
                                                                                                                                                                                             style="text-decoration: none;text-align: left;text-align-last: left;">
-                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/f5553fc0d52786d7f4a8a021f162b3ed.png"
+                                                                                                                                                                                            <img src="https://cloudfilesdm.com/postcards/fd7a33cb6ab30dcc96da6d7fb52b4a9d.png"
                                                                                                                                                                                                 class=""
                                                                                                                                                                                                 width="20"
                                                                                                                                                                                                 height="20"
@@ -1461,8 +1551,7 @@
                                                                                     <td class="pc-grid-td-last pc-w620-padding-40-0"
                                                                                         align="left" valign="top"
                                                                                         style="width: 50%; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px;">
-                                                                                        <table width="100%"
-                                                                                            border="0"
+                                                                                        <table width="100%" border="0"
                                                                                             cellpadding="0"
                                                                                             cellspacing="0"
                                                                                             role="presentation"
@@ -1470,8 +1559,7 @@
                                                                                             <tr>
                                                                                                 <td align="left"
                                                                                                     valign="top">
-                                                                                                    <table
-                                                                                                        align="left"
+                                                                                                    <table align="left"
                                                                                                         width="100%"
                                                                                                         border="0"
                                                                                                         cellpadding="0"
@@ -1499,8 +1587,10 @@
                                                                                                                                     <td valign="top"
                                                                                                                                         class="pc-font-alt"
                                                                                                                                         style="mso-line-height: exactly;line-height: 133%;letter-spacing: -0.2px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: 500;color: #ffffff;">
-                                                                                                                                        Contact
-                                                                                                                                        Me
+                                                                                                                                        <div>
+                                                                                                                                            <span>Contact
+                                                                                                                                                me</span>
+                                                                                                                                        </div>
                                                                                                                                     </td>
                                                                                                                                 </tr>
                                                                                                                             </table>
@@ -1521,7 +1611,7 @@
                                                                                                                     <tr>
                                                                                                                         <td class="pc-w620-spacing-0-0-25-0"
                                                                                                                             valign="top"
-                                                                                                                            style="padding: 0px 0px 25px 0px;">
+                                                                                                                            style="padding: 0px 0px 45px 0px;">
                                                                                                                             <table
                                                                                                                                 border="0"
                                                                                                                                 cellpadding="0"
@@ -1530,7 +1620,7 @@
                                                                                                                                 <tr>
                                                                                                                                     <td valign="top"
                                                                                                                                         class="pc-font-alt"
-                                                                                                                                        style="padding: 0px 0px 0px 0px;mso-line-height: exactly;line-height: 143%;letter-spacing: -0.2px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: normal;color: #d8d8d8;">
+                                                                                                                                        style="mso-line-height: exactly;line-height: 143%;letter-spacing: -0.2px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: normal;color: #d8d8d8;">
                                                                                                                                         <div>
                                                                                                                                             <span>{{ $data['address1'] }},</span>
                                                                                                                                         </div>
@@ -1570,11 +1660,12 @@
                                                                                                                                     <td valign="top"
                                                                                                                                         align="left">
                                                                                                                                         <a class="pc-font-alt"
-                                                                                                                                            href="tel:+91{{ $data['phone'] }}"
-                                                                                                                                            target="_blank"
+                                                                                                                                            href="tel:+919313440532"
                                                                                                                                             style="text-decoration: none;line-height: 133%;letter-spacing: -0.2px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 18px;font-weight: 500;color: #ffffff;text-align: left;text-align-last: left;">
-                                                                                                                                            <span><span>(+91)
-                                                                                                                                                    {{ substr_replace($data['phone'], ' ', 5, 0) }}</span>
+                                                                                                                                            <span>
+                                                                                                                                                <span>
+                                                                                                                                                    (+91) {{ substr_replace($data['phone'], ' ', 5, 0) }}
+                                                                                                                                                </span>
                                                                                                                                             </span>
                                                                                                                                         </a>
                                                                                                                                     </td>
@@ -1601,7 +1692,8 @@
                                                                                                                                 href="https://mail.google.com/mail/u/0/?fs=1&to={{ $data['email'] }}&tf=cm"
                                                                                                                                 target="_blank"
                                                                                                                                 style="text-decoration: none;line-height: 171%;font-family: 'Fira Sans', Helvetica, Arial, sans-serif;font-size: 14px;font-weight: 500;color: #1595e7;text-align: left;text-align-last: left;">
-                                                                                                                                <span><span>{{ $data['email'] }}</span>
+                                                                                                                                <span>
+                                                                                                                                    <span>{{ $data['email'] }}</span>
                                                                                                                                 </span>
                                                                                                                             </a>
                                                                                                                         </td>

@@ -52,7 +52,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="/reply?email={{ $item['email'] }}"><i class="icon fas fa-comments"
+                                        <a href="/reply?email={{ $item['email'] }}&name={{ $item['name'] }}"><i class="icon fas fa-comments"
                                                 style="color: #17a2b8"></i></a>
                                     </td>
                                     <td>

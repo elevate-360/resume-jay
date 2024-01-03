@@ -15,26 +15,25 @@ class ReplyController extends BaseController
     public function view()
     {
         $email = $_GET["email"];
-        return view('reply', compact('email'));
+        $name = $_GET["name"];
+        return view('reply', compact('email', 'name'));
     }
 
     public function reply(Request $request)
     {
         $email = $request->input("email");
-        $customData = array(
-            "subject" => $request->input("subject"),
-            "message" => $request->input("message")
-        );
+        $name = $request->input("name");
         $personalData = PersonalDetails::where("pdStatus", "!=", "0")->pluck("pdValue", "pdTitle")->all();
         $links = Links::select("linkAddress", "linkName")->pluck("linkAddress", "linkName")->all();
         $customData = array(
             "subject" => $request->input("subject"),
+            "name" => $name,
             "message" => $request->input("message"),
             "address1" => $personalData["address-apt"],
             "address2" => $personalData["address-area"] . ", " . $personalData["address-city"],
             "address3" => $personalData["address-state"] . ", " . $personalData["address-country-short"] . " - " . $personalData["address-pin"] . ".",
             "phone" => $personalData["phone1"],
-            "githubLink" => $links["Github"],
+            "instagramLink" => $links["Instagram"],
             "linkedinLink" => $links["Linkedin"],
             "twitterLink" => $links["Twitter"],
             "whatsappLink" => $links["Whatsapp"],

@@ -16,11 +16,13 @@
                     @method('POST')
                     <div class="card-body">
                         <div class="form-group">
-                            <input class="form-control" placeholder="To:" name="email" value="{{ $email }}"
-                                readonly>
+                            <input class="form-control" placeholder="To:"  type="email" name="email" value="{{ $email }}">
                         </div>
                         <div class="form-group">
-                            <input class="form-control" placeholder="Subject:" name="subject">
+                            <input class="form-control" placeholder="Full name" type="text" name="name" value="{{ $name }}">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Subject:" type="text" name="subject">
                         </div>
                         <div class="form-group">
                             <textarea id="compose-textarea" class="form-control" style="height: 300px" name="message">

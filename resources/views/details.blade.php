@@ -22,7 +22,7 @@
                             $counter = 0;
                         @endphp
                         <div class="col-md-6">
-                            <table class="table table-bordered" id="example2">
+                            <table class="table table-bordered example2" id="example2">
                                 <thead>
                                     <tr>
                                         <th>Id</th>
@@ -52,7 +52,7 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <table class="table table-bordered" id="example2">
+                            <table class="table table-bordered example2" id="example2">
                                 <thead>
                                     <tr>
                                         <th>Id</th>
@@ -94,7 +94,7 @@
                     <h3 class="card-title"><strong>Experience details</strong></h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered" id="example2">
+                    <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -144,7 +144,7 @@
                     <h3 class="card-title"><strong>Education details</strong></h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered" id="example2">
+                    <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -186,7 +186,7 @@
                     <h3 class="card-title"><strong>Links details</strong></h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered" id="example2">
+                    <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -242,7 +242,7 @@
                     <h3 class="card-title"><strong>Facts details</strong></h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered" id="example2">
+                    <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -269,10 +269,10 @@
         <div class="col-6">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title"><strong>Facts details</strong></h3>
+                    <h3 class="card-title"><strong>Skills details</strong></h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered" id="example2">
+                    <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -302,7 +302,7 @@
                     <h3 class="card-title"><strong>Bruteforce details</strong></h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered" id="example2">
+                    <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -340,7 +340,7 @@
                     <h3 class="card-title"><strong>Bruteforce details</strong></h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered" id="example2">
+                    <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -390,7 +390,7 @@
                 "autoWidth": false,
                 "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
             }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example2').DataTable({
+            $('.example2').DataTable({
                 "paging": true,
                 "lengthChange": false,
                 "searching": false,
