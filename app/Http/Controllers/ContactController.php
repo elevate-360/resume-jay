@@ -23,14 +23,15 @@ class ContactController extends BaseController
         $links = Links::select("linkAddress", "linkName")->pluck("linkAddress", "linkName")->all();
         $customData = array(
             "subject" => $subject,
+            "name" => $name,
             "address1" => $personalData["address-apt"],
             "address2" => $personalData["address-area"] . ", " . $personalData["address-city"],
             "address3" => $personalData["address-state"] . ", " . $personalData["address-country-short"] . " - " . $personalData["address-pin"] . ".",
             "phone" => $personalData["phone1"],
-            "githubLink" => $links["Github"],
             "linkedinLink" => $links["Linkedin"],
             "twitterLink" => $links["Twitter"],
             "whatsappLink" => $links["Whatsapp"],
+            "instagramLink" => $links["Instagram"],
             "email" => $personalData["email"]
         );
 
