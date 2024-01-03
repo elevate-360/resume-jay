@@ -236,7 +236,7 @@
     </div>
 
     <div class="row">
-        <div class="col-6">
+        <div class="col-8">
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title"><strong>Facts details</strong></h3>
@@ -248,6 +248,7 @@
                                 <th>Id</th>
                                 <th>Title</th>
                                 <th>Icon class</th>
+                                <th>Digit</th>
                                 <th>Description</th>
                             </tr>
                         </thead>
@@ -257,6 +258,7 @@
                                     <td>{{ $fct['fId'] }}</td>
                                     <td>{{ $fct['fTitle'] }}</td>
                                     <td>{{ $fct['fIcon'] }}</td>
+                                    <td>{{ $fct['fDigit'] }}</td>
                                     <td>{{ $fct['fDesc'] }}</td>
                                 </tr>
                             @endforeach
@@ -266,7 +268,7 @@
             </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-4">
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title"><strong>Skills details</strong></h3>
