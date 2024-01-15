@@ -163,7 +163,7 @@
                                     <td>{{ $edu['eduTitle'] }}</td>
                                     <td>{{ $edu['eduInstitute'] }}</td>
                                     <td>{{ $edu['eduDesc'] }}</td>
-                                    <td>{{ $edu['eduCity'] . ', ' . $exp['eduCountry'] }}</td>
+                                    <td>{{ $edu['eduCity'] . ', ' . $edu['eduCountry'] }}</td>
                                     <td><span
                                             class="badge bg-info">{{ date('d M, Y', strtotime($edu['eduStartDate'])) }}</span>
                                     </td>
