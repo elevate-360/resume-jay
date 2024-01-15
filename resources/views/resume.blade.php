@@ -99,6 +99,7 @@
             width: 100%;
             height: 100vh;
             background-size: cover;
+            margin-left: 0px;
         }
         }
     </style>
