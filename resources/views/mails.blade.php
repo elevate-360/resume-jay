@@ -32,18 +32,27 @@
                                 <tr data-widget="expandable-table" aria-expanded="false">
                                     <td>{{ ++$count }}</td>
                                     <td>{{ $item['mailToName'] }}</td>
-                                    <td>{{ $item['mailToEmail'] }}</td>
+                                    <td>
+                                        @php
+                                            $emails = explode(",", $item['mailToEmail']);
+                                        @endphp
+                                        @foreach ($emails as $value)
+                                            <span class="badge badge-info">{{ $value }}</span><br>
+                                        @endforeach
+                                    </td>
                                     <td>{{ $item['mailSubject'] }}</td>
-                                    <td><span class="badge bg-info">{{ date("d M, Y h:i a", strtotime($item['mailDate'])) }}</span></td>
+                                    <td><span
+                                            class="badge bg-success">{{ date('d M, Y h:i a', strtotime($item['mailDate'])) }}</span>
+                                    </td>
                                 </tr>
                                 <tr class="expandable-body d-none">
                                     <td colspan="5">
                                         <div>
                                             @php
                                                 $customData = [
-                                                    'subject' => $item["mailSubject"],
-                                                    'message' => $item["mailContent"],
-                                                    'name' => $item["mailToName"],
+                                                    'subject' => $item['mailSubject'],
+                                                    'message' => $item['mailContent'],
+                                                    'name' => $item['mailToName'],
                                                     'address1' => $personalData['address-apt'],
                                                     'address2' => $personalData['address-area'] . ', ' . $personalData['address-city'],
                                                     'address3' => $personalData['address-state'] . ', ' . $personalData['address-country-short'] . ' - ' . $personalData['address-pin'] . '.',
@@ -55,7 +64,8 @@
                                                     'email' => $personalData['email'],
                                                 ];
                                             @endphp
-                                            <iframe src="/mail?data={{ urlencode(json_encode($customData)) }}" frameborder="0" width="100%" height="600vh"></iframe>
+                                            <iframe src="/mail?data={{ urlencode(json_encode($customData)) }}"
+                                                frameborder="0" width="100%" height="600vh"></iframe>
                                         </div>
                                     </td>
                                 </tr>
