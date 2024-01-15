@@ -29,14 +29,15 @@
     <style>
         #hero {
             background: url("{{ $images['bgImage'] }}") top center;
-            width: 100%;
+            width: calc(100% - 300px);
             height: 100vh;
             background-size: cover;
+            margin-left: 300px;
         }
 
         #hero:before {
             content: "";
-            background: rgba(5, 13, 24, 0.3);
+            /* background: rgba(5, 13, 24, 0.3); */
             position: absolute;
             bottom: 0;
             top: 0;
@@ -142,11 +143,7 @@
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style='''>
-        <div class="hero-container" data-aos="fade-in">
-            <h1>{{ $personalDetails['firstname'] . ' ' . $personalDetails['lastname'] }}</h1>
-            <p>I'm <span class="typed" data-typed-items="{{ $personalDetails['typed-items'] }}"></span></p>
-        </div>
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style=''>
     </section><!-- End Hero -->
 
     <main id="main">
