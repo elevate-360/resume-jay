@@ -34,7 +34,7 @@
                                     <td>{{ $item['mailToName'] }}</td>
                                     <td>{{ $item['mailToEmail'] }}</td>
                                     <td>{{ $item['mailSubject'] }}</td>
-                                    <td><span class="badge bg-info">{{ date("d M, Y", strtotime($item['mailDate'])) }}</span></td>
+                                    <td><span class="badge bg-info">{{ date("d M, Y h:i a", strtotime($item['mailDate'])) }}</span></td>
                                 </tr>
                                 <tr class="expandable-body d-none">
                                     <td colspan="5">
