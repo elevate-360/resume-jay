@@ -30,6 +30,9 @@ Route::get('/update', [UpdateController::class, 'index']);
 Route::get('/details', [DetailsController::class, 'index']);
 Route::get('/mails', [MailsController::class, 'index']);
 Route::get('/mail', [MailsController::class, 'getMail']);
+Route::get('/compose', function () {
+    return view('reply');
+});
 Route::get('/forgot-password', function () {
     return view('forget');
 });

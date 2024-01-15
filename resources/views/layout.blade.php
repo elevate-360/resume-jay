@@ -153,6 +153,14 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a href="/compose" class="nav-link @yield('activeComp')">
+                                    <i class="nav-icon fas fa-edit"></i>
+                                    <p>
+                                        Compose Mail
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="/mails" class="nav-link @yield('activeMail')">
                                     <i class="nav-icon fas fa-inbox"></i>
                                     <p>

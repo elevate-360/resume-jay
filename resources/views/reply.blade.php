@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('activeComp')
+    active
+@endsection
+
 @section('pageTitle')
     Reply
 @endsection
@@ -16,10 +20,10 @@
                     @method('POST')
                     <div class="card-body">
                         <div class="form-group">
-                            <input class="form-control" placeholder="To:"  type="email" name="email" value="{{ $email }}">
+                            <input class="form-control" placeholder="To:"  type="email" name="email" value="{{ (isset($email) ? $email : "") }}">
                         </div>
                         <div class="form-group">
-                            <input class="form-control" placeholder="Full name" type="text" name="name" value="{{ $name }}">
+                            <input class="form-control" placeholder="Full name" type="text" name="name" value="{{ (isset($name) ? $name : "") }}">
                         </div>
                         <div class="form-group">
                             <input class="form-control" placeholder="Subject:" type="text" name="subject">
