@@ -153,6 +153,14 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a href="/mails" class="nav-link @yield('activeMail')">
+                                    <i class="nav-icon fas fa-inbox"></i>
+                                    <p>
+                                        Sent Mails
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="/update" class="nav-link @yield('activeUpd')">
                                     <i class="nav-icon fas fa-pen"></i>
                                     <p>
@@ -275,7 +283,7 @@
         <script src="dist/js/idle-timer.js"></script>
         <script>
             jQuery(document).ready(function() {
-                IdleTimeout.init(); // initialize session timeout settings
+                // IdleTimeout.init(); // initialize session timeout settings
             });
         </script>
         @yield('tblScript');

@@ -22,7 +22,9 @@ class ContactController extends BaseController
         $personalData = PersonalDetails::where("pdStatus", "!=", "0")->pluck("pdValue", "pdTitle")->all();
         $links = Links::select("linkAddress", "linkName")->pluck("linkAddress", "linkName")->all();
         $customData = array(
-            "subject" => $subject,
+            "subject" => "Thank You!",
+            "message" => $subject,
+            "to" => $email,
             "name" => $name,
             "address1" => $personalData["address-apt"],
             "address2" => $personalData["address-area"] . ", " . $personalData["address-city"],
