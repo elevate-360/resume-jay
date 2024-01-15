@@ -55,7 +55,7 @@
                                                     'email' => $personalData['email'],
                                                 ];
                                             @endphp
-                                            <iframe src="/mail?data={{ json_encode($customData) }}" frameborder="0" width="100%" height="600vh"></iframe>
+                                            <iframe src="/mail?data={{ urlencode(json_encode($customData)) }}" frameborder="0" width="100%" height="600vh"></iframe>
                                         </div>
                                     </td>
                                 </tr>
