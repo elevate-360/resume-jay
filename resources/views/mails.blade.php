@@ -17,7 +17,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    <table class="table table-striped table-hover example2" id="">
+                    <table class="table table-hover example2" id="">
                         <thead>
                             <tr>
                                 <th>#</th>
