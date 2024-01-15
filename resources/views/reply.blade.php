@@ -20,7 +20,7 @@
                     @method('POST')
                     <div class="card-body">
                         <div class="form-group">
-                            <input class="form-control" placeholder="To:"  type="email" name="email" value="{{ (isset($email) ? $email : "") }}">
+                            <input class="form-control" placeholder="To:"  type="text" name="email" value="{{ (isset($email) ? $email : "") }}">
                         </div>
                         <div class="form-group">
                             <input class="form-control" placeholder="Full name" type="text" name="name" value="{{ (isset($name) ? $name : "") }}">

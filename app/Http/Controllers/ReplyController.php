@@ -21,12 +21,13 @@ class ReplyController extends BaseController
 
     public function reply(Request $request)
     {
-        $email = $request->input("email");
+        $email = explode(",", str_replace(" ", "", $request->input("email")));
         $name = $request->input("name");
         $personalData = PersonalDetails::where("pdStatus", "!=", "0")->pluck("pdValue", "pdTitle")->all();
         $links = Links::select("linkAddress", "linkName")->pluck("linkAddress", "linkName")->all();
         $customData = array(
             "subject" => $request->input("subject"),
+            "to" => str_replace(" ", "", $request->input("email")),
             "name" => $name,
             "message" => $request->input("message"),
             "address1" => $personalData["address-apt"],
