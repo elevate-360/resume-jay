@@ -5,7 +5,7 @@
 @endsection
 
 @section('pageTitle')
-    Reply
+    Mail
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title"><strong>Compose Reply Message</strong></h3>
+                    <h3 class="card-title"><strong>Compose Message</strong></h3>
                 </div>
                 <form action="/api/reply" method="post">
                     @csrf

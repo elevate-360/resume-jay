@@ -57,7 +57,7 @@
                                     </td>
                                     <td>
                                         <span
-                                            class="right badge badge-info">{{ date('d M, Y - h:m a', strtotime($item['cTime'])) }}</span>
+                                            class="right badge badge-info">{{ date('d M, Y - h:m a', strtotime($item['cTime']) + 19800) }}</span>
                                     </td>
                                 </tr>
                             @endforeach

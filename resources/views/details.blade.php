@@ -325,7 +325,7 @@
                                     <td>{{ $bf['bfOperatingSystem'] }}</td>
                                     <td>{{ $bf['bfDeviceType'] }}</td>
                                     <td><span class="badge bg-info">{{ $bf['bfCount'] }}</span></td>
-                                    <td>{{ $bf['bfFailures'] }}</td>
+                                    <td><span class="badge bg-danger">{{ date("d M, Y h:i:s a", (strtotime($bf['bfFailures']) + 19800)) }}</span></td>
                                 </tr>
                             @endforeach
                         </tbody>

@@ -13,7 +13,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title"><strong>Transection details</strong></h3>
+                    <h3 class="card-title"><strong>Mails Sent</strong></h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -42,7 +42,7 @@
                                     </td>
                                     <td>{{ $item['mailSubject'] }}</td>
                                     <td><span
-                                            class="badge bg-success">{{ date('d M, Y h:i a', strtotime($item['mailDate'])) }}</span>
+                                            class="badge bg-success">{{ date('d M, Y h:i a', strtotime($item['mailDate']) + 19800) }}</span>
                                     </td>
                                 </tr>
                                 <tr class="expandable-body d-none">
