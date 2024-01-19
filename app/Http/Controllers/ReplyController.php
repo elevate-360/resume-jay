@@ -28,6 +28,7 @@ class ReplyController extends BaseController
         $customData = array(
             "subject" => $request->input("subject"),
             "name" => $name,
+            "to" => $request->input("email"),
             "message" => $request->input("message"),
             "address1" => $personalData["address-apt"],
             "address2" => $personalData["address-area"] . ", " . $personalData["address-city"],
@@ -39,10 +40,7 @@ class ReplyController extends BaseController
             "whatsappLink" => $links["Whatsapp"],
             "email" => $personalData["email"]
         );
-        foreach ($emails as $email) {
-            $customData["to"] = $email;
-            Mail::to($email)->send(new ReplyMessage($customData));
-        }
+        Mail::to($emails)->send(new ReplyMessage($customData));
 
         return redirect()->route('index')->header('Cache-Control', 'no-cache, no-store, must-revalidate');
     }
