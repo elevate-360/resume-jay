@@ -16,8 +16,8 @@
                     <h3 class="card-title"><strong>Mails Sent</strong></h3>
                 </div>
                 <!-- /.card-header -->
-                <div class="card-body">
-                    <table class="table table-hover example2" id="">
+                <div class="card-body table-responsive p-0" style="height: 693px;">
+                    <table class="table table-head-fixed text-nowrap" id="">
                         <thead>
                             <tr>
                                 <th>#</th>
