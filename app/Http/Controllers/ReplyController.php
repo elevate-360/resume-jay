@@ -40,9 +40,7 @@ class ReplyController extends BaseController
             "whatsappLink" => $links["Whatsapp"],
             "email" => $personalData["email"]
         );
-        Mail::to($emails)
-        ->from("contact@dj-jay.in", "Jay Chauhan")
-        ->send(new ReplyMessage($customData));
+        Mail::to($emails)->send(new ReplyMessage($customData));
 
         return redirect()->route('index')->header('Cache-Control', 'no-cache, no-store, must-revalidate');
     }

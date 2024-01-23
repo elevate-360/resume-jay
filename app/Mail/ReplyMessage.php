@@ -8,6 +8,8 @@ use Illuminate\Mail\Mailable;
 class ReplyMessage extends Mailable
 {
     public $data;
+    public $fromEmail = "contact@dj-jay.in";
+    public $fromName = "Jay Chauhan";
 
     public function __construct($customData)
     {
@@ -23,7 +25,7 @@ class ReplyMessage extends Mailable
             "mailContent" => $this->data["message"]
         );
         Mails::insert($insertData);
-        return $this->subject($this->data["subject"])
+        return $this->from($this->fromEmail, $this->fromName)->subject($this->data["subject"])
             ->view('email.reply');
     }
 }
