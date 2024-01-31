@@ -103,6 +103,22 @@
             background-size: cover;
             margin-left: 0px;
         }
+        #hero:before {
+            content: "";
+            /* background: rgba(5, 13, 24, 0.3); */
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        #hero .hero-container {
+            position: relative;
+            z-index: 2;
+            min-width: 300px;
+        }
         }
     </style>
 </head>
@@ -162,7 +178,7 @@
 
                 <div class="row">
                     <div class="col-lg-4" data-aos="fade-right">
-                        <img src="{{ $images['displayImage'] }}" class="img-fluid" alt="">
+                        <img src="{{ $images['displayImage'] }}" alt="Jay Chauhan" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <h3>Web Developer &amp; Music Producer.</h3>
