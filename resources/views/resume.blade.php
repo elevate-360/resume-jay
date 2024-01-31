@@ -6,8 +6,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Jay Chauhan | Portfolio</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <link rel="canonical" href="https://dj-jay.in">
+    <meta content="Deadline-driven Full Stack Developer with 3+ years' expertise in PHP, Laravel, React, Vue, Java. Translates concepts into polished web apps, excels in end-to-end development" name="description">
+    <meta content="Jay Chauhan" name="keywords">
+    <meta name="google-site-verification" content="7l9rvaUEK74Sk3NfrTUgx0ZbIeHoq49BKK_1JwGGjgY" />
 
     <!-- Favicons -->
     <link href="/favicon.png" rel="icon">
