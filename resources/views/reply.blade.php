@@ -18,7 +18,7 @@
                 <form action="/api/reply" method="post">
                     @csrf
                     @method('POST')
-                    <div class="card-body table-responsive p-0">
+                    <div class="card-body table-responsive">
                         <div class="form-group">
                             <input class="form-control" placeholder="To:"  type="text" name="email" value="{{ (isset($email) ? $email : "") }}">
                         </div>
