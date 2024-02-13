@@ -16,7 +16,7 @@
                     <h3 class="card-title"><strong>Personal details</strong></h3>
                 </div>
                 <!-- /.card-header -->
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive ">
                     <div class="row">
                         @php
                             $counter = 0;
@@ -93,7 +93,7 @@
                 <div class="card-header">
                     <h3 class="card-title"><strong>Experience details</strong></h3>
                 </div>
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive ">
                     <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
@@ -143,7 +143,7 @@
                 <div class="card-header">
                     <h3 class="card-title"><strong>Education details</strong></h3>
                 </div>
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive ">
                     <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
@@ -185,7 +185,7 @@
                 <div class="card-header">
                     <h3 class="card-title"><strong>Links details</strong></h3>
                 </div>
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive ">
                     <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
@@ -241,7 +241,7 @@
                 <div class="card-header">
                     <h3 class="card-title"><strong>Facts details</strong></h3>
                 </div>
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive ">
                     <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
@@ -273,7 +273,7 @@
                 <div class="card-header">
                     <h3 class="card-title"><strong>Skills details</strong></h3>
                 </div>
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive ">
                     <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
@@ -303,7 +303,7 @@
                 <div class="card-header">
                     <h3 class="card-title"><strong>Bruteforce details</strong></h3>
                 </div>
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive ">
                     <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>
@@ -341,7 +341,7 @@
                 <div class="card-header">
                     <h3 class="card-title"><strong>Bruteforce details</strong></h3>
                 </div>
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive ">
                     <table class="table table-bordered example2" id="example2">
                         <thead>
                             <tr>

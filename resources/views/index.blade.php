@@ -16,7 +16,7 @@
                     <h3 class="card-title"><strong>Transection details</strong></h3>
                 </div>
                 <!-- /.card-header -->
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive">
                     <table id="example1" class="table table-hover table-bordered table-striped">
                         <thead>
                             <tr>
