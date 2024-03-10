@@ -379,7 +379,7 @@
                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="left">
                                             <tr>
                                              <td valign="top" align="left">
-                                              <a class="pc-font-alt" href="{{ $data['linkedinLink'] }}" target="_blank" style="text-decoration: none;text-align: left;text-align-last: left;">
+                                              <a class="pc-font-alt" href="{{ $data['linkedinLink'] }}" target="_blank" style="text-decoration: none;text-align: left;text-align-last: left; color: #FFFFFF">
                                                <img src="https://cloudfilesdm.com/postcards/3096c0f213c325dd5a24aa2807750e94.png" class="" width="16" height="16"  alt="" />
                                               </a>
                                              </td>
@@ -408,7 +408,7 @@
                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="left">
                                             <tr>
                                              <td valign="top" align="left">
-                                              <a class="pc-font-alt" href="{{ $data['twitterLink'] }}" target="_blank" style="text-decoration: none;text-align: left;text-align-last: left;">
+                                              <a class="pc-font-alt" href="{{ $data['twitterLink'] }}" target="_blank" style="text-decoration: none;text-align: left;text-align-last: left; color: #FFFFFF">
                                                <img src="https://cloudfilesdm.com/postcards/dae1140630534fd14ae2baebf396ee4b.png" class="" width="15" height="16"  alt="" />
                                               </a>
                                              </td>
@@ -437,7 +437,7 @@
                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="left">
                                             <tr>
                                              <td valign="top" align="left">
-                                              <a class="pc-font-alt" href="{{ $data['whatsappLink'] }}" target="_blank" style="text-decoration: none;text-align: left;text-align-last: left;">
+                                              <a class="pc-font-alt" href="{{ $data['whatsappLink'] }}" target="_blank" style="text-decoration: none;text-align: left;text-align-last: left; color: #FFFFFF">
                                                <img src="https://cloudfilesdm.com/postcards/d98bd6764bd10259a07624f53c86b53c.png" class="" width="15" height="16"  alt="" />
                                               </a>
                                              </td>
