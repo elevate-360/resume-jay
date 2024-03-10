@@ -343,7 +343,7 @@
                             <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                              <tr>
                               <td align="left" valign="top">
-                               <img src="https://cloudfilesdm.com/postcards/image-1706451747798.png" class="" width="140" height="60" alt="" />
+                               <img src="https://cloudfilesdm.com/postcards/image-1706451747798.png" class="" width="190" height="60" alt="" />
                               </td>
                              </tr>
                             </table>
