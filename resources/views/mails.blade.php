@@ -48,23 +48,7 @@
                                 <tr class="expandable-body d-none">
                                     <td colspan="5">
                                         <div>
-                                            @php
-                                                $customData = [
-                                                    'subject' => $item['mailSubject'],
-                                                    'message' => $item['mailContent'],
-                                                    'name' => $item['mailToName'],
-                                                    'address1' => $personalData['address-apt'],
-                                                    'address2' => $personalData['address-area'] . ', ' . $personalData['address-city'],
-                                                    'address3' => $personalData['address-state'] . ', ' . $personalData['address-country-short'] . ' - ' . $personalData['address-pin'] . '.',
-                                                    'phone' => $personalData['phone1'],
-                                                    'linkedinLink' => $links['Linkedin'],
-                                                    'twitterLink' => $links['Twitter'],
-                                                    'whatsappLink' => $links['Whatsapp'],
-                                                    'instagramLink' => $links['Instagram'],
-                                                    'email' => $personalData['email'],
-                                                ];
-                                            @endphp
-                                            <iframe src="/mail?data={{ urlencode(json_encode($customData)) }}"
+                                            <iframe src="/mail?data={{ urlencode($item['mailId']) }}"
                                                 frameborder="0" width="100%" height="600vh"></iframe>
                                         </div>
                                     </td>
