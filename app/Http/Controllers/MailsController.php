@@ -37,9 +37,9 @@ class MailsController extends BaseController
         $data = Mails::where("mailId", $_GET["id"])->get();
 
         $customData = [
-            'subject' => $data->mailSubject,
-            'message' => $data->mailContent,
-            'name' => $data->mailToName,
+            'subject' => $data[0]->mailSubject,
+            'message' => $data[0]->mailContent,
+            'name' => $data[0]->mailToName,
             'address1' => $personalData['address-apt'],
             'address2' => $personalData['address-area'] . ', ' . $personalData['address-city'],
             'address3' => $personalData['address-state'] . ', ' . $personalData['address-country-short'] . ' - ' . $personalData['address-pin'] . '.',
