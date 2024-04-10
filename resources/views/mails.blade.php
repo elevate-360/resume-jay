@@ -48,7 +48,7 @@
                                 <tr class="expandable-body d-none">
                                     <td colspan="5">
                                         <div>
-                                            <iframe src="/mail?data={{ urlencode($item['mailId']) }}"
+                                            <iframe src="/mail?id={{ urlencode($item['mailId']) }}"
                                                 frameborder="0" width="100%" height="600vh"></iframe>
                                         </div>
                                     </td>
